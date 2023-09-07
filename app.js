@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
     current_day: weekday[date.getDay()],
     utc_time: date.toISOString(),
     track,
-    github_file_url: 'https://github.com/Abuka-Victor/hng_backend_task1/app.js',
+    github_file_url:
+      'https://github.com/Abuka-Victor/hng_backend_task1/blob/main/app.js',
     github_repo_url: 'https://github.com/Abuka-Victor/hng_backend_task1',
     status_code: 200,
   });
