@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   const { slack_name, track } = req.query;
   const weekday = [
     'Sunday',
