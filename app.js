@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   const { slack_name, track } = req.query;
   const weekday = [
     'Sunday',
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.status(200).json({
     slack_name,
     current_day: weekday[date.getDay()],
-    utc_time: date.toISOString(),
+    utc_time: date.toISOString().slice(0, 19) + "Z",
     track,
     github_file_url:
       'https://github.com/Abuka-Victor/hng_backend_task1/blob/main/app.js',
