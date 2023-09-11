@@ -2,6 +2,14 @@
 
 This is a simple CRUD (Create, Read, Update, Delete) API built using Node.js, Express, and MongoDB. It provides basic functionality to manage resources and serves as a template for building more complex APIs. Below, you will find instructions on setting up and running the project.
 
+## Live link to the API
+
+[https://backend-task1-g9t6.onrender.com](https://backend-task1-g9t6.onrender.com)
+
+```
+https://backend-task1-g9t6.onrender.com
+```
+
 ## Prerequisites
 
 Before you get started, make sure you have the following installed on your system:
@@ -146,6 +154,24 @@ DELETE /api/:username
 ```
 
 Replace `:username` with the username of the person you want to delete.
+
+### Testing the API with the Bash Script
+
+To test the API with the Bash Script simply run the following command
+
+```bash
+./test.sh prod #to test the live API
+```
+
+```bash
+./test.sh dev 3000 #to test the local API on port 3000
+```
+
+```bash
+./test.sh help #to view the testing documentation
+```
+
+> If you want to run the test script on windows and it doesn't work properly you can check [here](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10) for how to run the script
 
 ## Conclusion
 
