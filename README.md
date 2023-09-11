@@ -69,6 +69,8 @@ This API provides the following CRUD endpoints for managing resources:
 
 You can test these endpoints using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
 
+> Please see the documentation on [here](https://documenter.getpostman.com/view/17358662/2s9YC2zDDq) for more information. You should have setup the project locally before trying this out. Make sure to change the port in Postman if necesary.
+
 ## Example Usage
 
 Here's an example of how to use the API endpoints:
