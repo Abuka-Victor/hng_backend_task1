@@ -3,7 +3,7 @@ const task2Router = require('./routes/task2');
 const { PORT } = require('./config/keys');
 
 const app = express();
-const PORT = PORT || 8080;
+const _PORT = PORT || 8080;
 
 app.use(express.json());
 
@@ -34,5 +34,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log(`listening on port ${PORT}`);
+  console.log(`listening on port ${_PORT}`);
 });
